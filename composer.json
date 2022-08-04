@@ -24,7 +24,7 @@
         "phan/phan": "^5.3"
     },
     "scripts": {
-        "test" : "phpunit tests\\TestBuscadorDeCursos.php",
+        "test": "phpunit tests\\TestBuscadorDeCursos.php",
         "phan": "phan --allow-polyfill-parser src\\Buscador.php",
         "cs": "phpcs --standard=psr12 src\\",
         "check": [
@@ -32,5 +32,11 @@
             "@cs",
             "@test"
         ]
+    },
+    "scripts-descriptions": {
+        "check": "Script que roda o phan para verificações do codigo. Phan, php CS e PHPUNIT."
+    }
+
+
     }
 }
