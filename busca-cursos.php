@@ -13,4 +13,6 @@ $crawler = new Crawler();
 $buscardor = new Buscador($client, $crawler);
 $cursos = $buscardor->buscar('/cursos-online-programacao/php');
 
-foreach ($cursos as $curso) echo exibeMensagem($curso);
+foreach ($cursos as $curso) {
+    exibeMensagem($curso);
+}
